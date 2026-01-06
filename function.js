@@ -11,6 +11,9 @@ export const ways = (req, res) => {
     const s = S.split(",").map(Number);
 
     const result = solve(nums, s);
+    res.send("WAYS OF MAKING CHANGE");
+    res.send("Array Coins = "+arr);
+    res.send("Targer Array ="+S);
     res.send("ANS = "+result );
 };
 
